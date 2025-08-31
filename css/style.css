@@ -112,3 +112,44 @@ h2 {
   border-radius: 4px;
   font-size: 0.9em;
 }
+/* Timeline Layout */
+.timeline {
+  border-left: 2px solid #4B5320;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "●";
+  color: #4B5320;
+  position: absolute;
+  left: -30px;
+  font-size: 1.2em;
+}
+
+.timeline-item h3 {
+  margin: 0;
+  color: #4B5320;
+}
+
+.timeline-item .date {
+  font-size: 0.9em;
+  color: #aaa;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Achievements List */
+.achievements ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.achievements li {
+  margin-bottom: 10px;
+}
