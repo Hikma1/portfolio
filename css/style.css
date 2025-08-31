@@ -75,3 +75,40 @@ h2 {
 .main-content p {
   margin-bottom: 15px;
 }
+/* Project Cards */
+.project-card {
+  background-color: #111;
+  border: 1px solid #4B5320;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #4B5320;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4B5320;
+  text-decoration: underline;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 12px rgba(75, 83, 32, 0.6);
+}
+
+/* Status label */
+.status {
+  display: inline-block;
+  background-color: #4B5320;
+  color: #fff;
+  padding: 3px 8px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
