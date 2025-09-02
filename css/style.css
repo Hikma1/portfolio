@@ -194,3 +194,12 @@ h2 {
   color: #fff;
   margin-right: 8px;
 }
+/* Sidebar links */
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
