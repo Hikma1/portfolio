@@ -210,3 +210,12 @@ a {
 a:hover {
   color: #4B5320;
 }
+/* Skill list hover */
+.skills li {
+  transition: transform 0.2s, color 0.3s;
+}
+
+.skills li:hover {
+  transform: translateX(5px);
+  color: #4B5320;
+}
