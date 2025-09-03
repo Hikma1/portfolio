@@ -199,7 +199,14 @@ h2 {
   color: #fff;
   text-decoration: none;
 }
-
+/* Hover effects for links */
 .sidebar a:hover {
   text-decoration: underline;
+}
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4B5320;
 }
