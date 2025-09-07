@@ -324,3 +324,41 @@ section:nth-child(4) { animation-delay: 0.8s; }
   transform: translateY(-5px);
   box-shadow: 0px 4px 12px rgba(75, 83, 32, 0.6);
 }
+/* Hero Banner */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #000, #111);
+  border-bottom: 2px solid #4B5320;
+}
+
+.hero h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.hero .name {
+  color: #4B5320;
+}
+
+.hero h2 {
+  font-size: 1.6em;
+  color: #fff;
+  height: 40px; /* keeps space stable while text animates */
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+.hero .tagline {
+  font-size: 1em;
+  margin-top: 15px;
+  color: #ccc;
+}
