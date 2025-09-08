@@ -8,208 +8,195 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-
 <body>
-  <nav class="navbar">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#work">Work Experience</a></li>
-    <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#certificates">Certificates</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
+  <!-- Hero Banner -->
   <header class="hero">
-    <h1 style="color: aliceblue; font: large;"><span id="typed-text"></span><span class="cursor">|</span></h1>
-  <h2>I'm <span class="name">Hikma Ibrahim Ahmed</span></h2>
-  <h1 class="tagline"> Script Hijabi | Tech Student </h1>
-</header>
+    <h1><span id="typed-text"></span><span class="cursor">|</span></h1>
+    <h2>I'm <span class="name">Hikma Ibrahim Ahmed</span></h2>
+    <p class="tagline">ScriptVeil | Tech Student | Cybersecurity & IoT Enthusiast</p>
+  </header>
 
   <div class="container">
-
     <!-- Sidebar -->
     <aside class="sidebar">
-      <img src="images/profile.jpg" alt="Hikma Ibrahim Ahmed" class="profile-pic" width="150px" height="150px">
+      <img src="images/profile.jpg" alt="Hikma Ibrahim Ahmed" class="profile-pic" width="150" height="150">
 
       <h1>Hikma Ibrahim Ahmed</h1>
-      <h3>Computer Science Student, <p>Ababa University</p> </h3>
+      <h3>Computer Science Student, Addis Ababa University</h3>
       <p>Cybersecurity & IoT Enthusiast</p>
 
-   <section class="contact">
-  <h4>Contact</h4>
-  <p><i class="fa-solid fa-envelope"></i> hikma0227@gmail.com</p>
-  <p><i class="fa-brands fa-linkedin"></i> <a href="#">linkedin.com/in/hikma</a></p>
-  <p><i class="fa-brands fa-github"></i> <a href="#">github.com/HikmaIbrahim</a></p>
-</section>
+      <!-- Sidebar Navigation -->
+      <nav class="side-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#work">Work Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-  <section  class="skills">
-  <h4>Skills</h4>
-  <ul>
-    <li><i class="fa-solid fa-code"></i> C++</li>
-    <li><i class="fa-brands fa-python"></i> Python</li>
-    <li><i class="fa-brands fa-js"></i> JavaScript</li>
-    <li><i class="fa-solid fa-microchip"></i> Arduino & ESP32</li>
-  </ul>
-</section>
+      <!-- Contact Info -->
+      <section class="contact">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-envelope"></i> hikma0227@gmail.com</p>
+        <p><i class="fa-brands fa-linkedin"></i> <a href="#">linkedin.com/in/hikma</a></p>
+        <p><i class="fa-brands fa-github"></i> <a href="#">github.com/HikmaIbrahim</a></p>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills">
+        <h4>Skills</h4>
+        <ul>
+          <li><i class="fa-solid fa-code"></i> C++</li>
+          <li><i class="fa-brands fa-python"></i> Python</li>
+          <li><i class="fa-brands fa-js"></i> JavaScript</li>
+          <li><i class="fa-solid fa-microchip"></i> Arduino & ESP32</li>
+        </ul>
+      </section>
     </aside>
 
     <!-- Main Content -->
     <main class="main-content">
-      <section class="about" id="about">
+      <!-- About -->
+      <section id="about" class="about">
         <h2>About Me</h2>
         <p>I am a Computer Science student passionate about Cybersecurity, IoT, and Embedded Systems. I love building secure and innovative projects that solve real-world problems.</p>
       </section>
 
-      <section class="projects">
-  <h2>Projects</h2>
+      <!-- Projects -->
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
 
-  <!-- Featured Project -->
-  <div class="project-card">
-    <h3>Encrypted USB Storage 🔐</h3>
-    <p>A concept project to build a secure USB storage device using AES encryption. Designed to protect sensitive files with robust security and user-friendly access.</p>
-    <span class="status">Project in progress</span>
-  </div>
+        <div class="project-card">
+          <h3>Encrypted USB Storage 🔐</h3>
+          <p>A concept project to build a secure USB storage device using AES encryption. Designed to protect sensitive files with robust security and user-friendly access.</p>
+          <span class="status">Project in progress</span>
+        </div>
 
-  <div class="project-card">
-    <h3>Smart Health Monitoring System ❤️‍🩹</h3>
-    <p>Developed a system using sensors to measure temperature, heart rate, and oxygen levels. Results were displayed on an LCD and a mobile app via Bluetooth.</p>
-    <a href="#">GitHub Link</a>
-  </div>
+        <div class="project-card">
+          <h3>Smart Health Monitoring System ❤️‍🩹</h3>
+          <p>Developed a system using sensors to measure temperature, heart rate, and oxygen levels. Results were displayed on an LCD and a mobile app via Bluetooth.</p>
+          <a href="#">GitHub Link</a>
+        </div>
 
-  <div class="project-card">
-    <h3>SheConnects Web App 💻</h3>
-    <p>Worked as UI/UX designer for a platform empowering women through technology. Contributed to user research, wireframing, and interface design.</p>
-    <a href="#">GitHub Link</a>
-  </div>
+        <div class="project-card">
+          <h3>SheConnects Web App 💻</h3>
+          <p>Worked as UI/UX designer for a platform empowering women through technology. Contributed to user research, wireframing, and interface design.</p>
+          <a href="#">GitHub Link</a>
+        </div>
 
-  <div class="project-card">
-    <h3>Smart Agriculture System 🌱</h3>
-    <p>Designed a smart agriculture solution using sensors to monitor soil moisture, temperature, and humidity. Aimed at improving irrigation efficiency.</p>
-    <a href="#">GitHub Link</a>
-  </div>
-</section>
+        <div class="project-card">
+          <h3>Smart Agriculture System 🌱</h3>
+          <p>Designed a smart agriculture solution using sensors to monitor soil moisture, temperature, and humidity. Aimed at improving irrigation efficiency.</p>
+          <a href="#">GitHub Link</a>
+        </div>
+      </section>
 
+      <!-- Work Experience -->
+      <section id="work" class="work-experience">
+        <h2>Work Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="timeline-content">
+              <h3>Front-End Developer Intern – Code Alpha</h3>
+              <span class="date">April 2025</span>
+              <p>Completed a hands-on internship focused on frontend web development. Worked on real-world UI projects using HTML, CSS, and JavaScript.</p>
+            </div>
+          </div>
 
-     <section class="work-experience" id="work-experience">
-  <h2>Work Experience</h2>
-  <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="timeline-content">
+              <h3>Technical Member – INSA Cyber Talent Center</h3>
+              <span class="date">Aug 2024 – Present</span>
+              <p>Participated in national technical projects focused on embedded systems and cybersecurity.</p>
+            </div>
+          </div>
 
-    <div class="timeline-item">
-      <div class="timeline-icon"><i class="fa-solid fa-laptop-code"></i></div>
-      <div class="timeline-content">
-        <h3>Front-End Developer Intern – Code Alpha</h3>
-        <span class="date">April 2025</span>
-        <p>Completed a hands-on internship focused on frontend web development. Worked on real-world UI projects using HTML, CSS, and JavaScript.</p>
-      </div>
-    </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fa-solid fa-book"></i></div>
+            <div class="timeline-content">
+              <h3>Facilitator – 10th Bahir Dar University Math Camp</h3>
+              <span class="date">July 2023</span>
+              <p>Guided high school participants in mathematical problem-solving sessions and supported instructors in delivering content.</p>
+            </div>
+          </div>
 
-<div class="timeline-item">
-      <div class="timeline-icon"><i class="fa-solid fa-microchip"></i></div>
-      <div class="timeline-content">
-        <h3>Technical Member – INSA Cyber Talent Center</h3>
-        <span class="date">Aug 2024 – Present</span>
-        <p>Participated in national technical projects focused on embedded systems and cybersecurity.</p>
-      </div>
-    </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="timeline-content">
+              <h3>Co-Founder – Girls' Empowerment Club</h3>
+              <span class="date">2023 – 2024</span>
+              <p>Initiated and co-led a club focused on empowering female students through mentorship, leadership training, and skill-building workshops.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="timeline-item">
-      <div class="timeline-icon"><i class="fa-solid fa-book"></i></div>
-      <div class="timeline-content">
-        <h3>Facilitator – 10th Bahir Dar University Math Camp</h3>
-        <span class="date">July 2023</span>
-        <p>Guided high school participants in mathematical problem-solving sessions and supported instructors in delivering content.</p>
-      </div>
-    </div>
+      <!-- Achievements -->
+      <section id="achievements" class="achievements">
+        <h2>Key Achievements</h2>
+        <div class="achievement-list">
+          <div class="achievement"><i class="fa-solid fa-trophy"></i> Excellence in Mathematics – Pan-African Olympiad (2023)</div>
+          <div class="achievement"><i class="fa-solid fa-chart-line"></i> Technical Contributor – Agricultural Census, Ethiopia (2024)</div>
+          <div class="achievement"><i class="fa-solid fa-laptop-code"></i> Graduate – SheCodes Coding Workshop</div>
+          <div class="achievement"><i class="fa-solid fa-globe"></i> Ambassador – AGCCI ITU Academy (2025)</div>
+          <div class="achievement"><i class="fa-solid fa-lightbulb"></i> Contributor – INSA Summer Camp, Ethiopia (2024)</div>
+        </div>
+      </section>
 
-    <div class="timeline-item">
-      <div class="timeline-icon"><i class="fa-solid fa-users"></i></div>
-      <div class="timeline-content">
-        <h3>Co-Founder – Girls' Empowerment Club</h3>
-        <span class="date">2023 – 2024</span>
-        <p>Initiated and co-led a club focused on empowering female students through mentorship, leadership training, and skill-building workshops.</p>
-      </div>
-    </div>
+      <!-- Certificates -->
+      <section id="certificates" class="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate-gallery">
+          <div class="certificate-card">
+            <img src="images/certificate1.png" alt="Certificate 1">
+            <p>Pan-African Mathematics Olympiad – Excellence in Mathematics (2023)</p>
+          </div>
+          <div class="certificate-card">
+            <img src="images/certificate2.png" alt="Certificate 2">
+            <p>SheCodes Coding Workshop Graduate</p>
+          </div>
+          <div class="certificate-card">
+            <img src="images/certificate3.png" alt="Certificate 3">
+            <p>Ethiopian Statistical Service</p>
+          </div>
+          <div class="certificate-card">
+            <img src="images/certificate4.png" alt="Certificate 4">
+            <p>Bahir Dar University Math Camp</p>
+          </div>
+          <div class="certificate-card">
+            <img src="images/certificate5.png" alt="Certificate 5">
+            <p>Ethiopia Space Science Society's Summer Space Training</p>
+          </div>
+          <div class="certificate-card">
+            <img src="images/certificate6.png" alt="Certificate 6">
+            <p>BDAC Summer BootCamp</p>
+          </div>
+          <div class="certificate-card">
+            <img src="images/certificate7.png" alt="Certificate 7">
+            <p>Co-founder of Girls' Empowerment Club</p>
+          </div>
+          <div class="certificate-card">
+            <img src="images/certificate8.png" alt="Certificate 8">
+            <p>Best in Class – Code Day</p>
+          </div>
+        </div>
+      </section>
 
-  </div>
-</section>
-
-<section class="achievements" id="achievements">
-  <h2>Key Achievements</h2>
-  <div class="achievement-list">
-
-    <div class="achievement">
-      <i class="fa-solid fa-trophy"></i>
-      <p>Excellence in Mathematics – Pan-African Olympiad (2023)</p>
-    </div>
-     <div class="achievement">
-      <i class="fa-solid fa-chart-line"></i>
-      <p>Technical Contributor – Agricultural Census, Ethiopia (2024)</p>
-    </div>
-
-    <div class="achievement">
-      <i class="fa-solid fa-laptop-code"></i>
-      <p>Graduate – SheCodes Coding Workshop</p>
-    </div>
-
-    <div class="achievement">
-      <i class="fa-solid fa-globe"></i>
-      <p>Ambassador – AGCCI ITU Academy (2025)</p>
-    </div>
-
-    <div class="achievement">
-      <i class="fa-solid fa-lightbulb"></i>
-      <p>Contributor – INSA Summer Camp, Ethiopia (2024)</p>
-    </div>
-
-  </div>
-</section>
-<section class="certificates" id="certificates">
-  <h2>Certificates</h2>
-  <div class="certificate-gallery">
-    <div class="certificate-card">
-      <img src="images/certificate1.png" alt="Certificate 1">
-      <p>Pan-African Mathematics Olympiad – Excellence in Mathematics (2023)</p>
-    </div>
-
-    <div class="certificate-card">
-      <img src="images/certificate2.png" alt="Certificate 2">
-      <p>SheCodes Coding Workshop Graduate</p>
-    </div>
-     <div class="certificate-card">
-      <img src="images/certificate3.png" alt="Certificate 3">
-      <p>Ethiopian Statical service </p>
-    </div>
-
-    <div class="certificate-card">
-      <img src="images/certficate4.png" alt="Certificate 4">
-      <p>Bahirdar University MathCamp</p>
-    </div>
-  
-    <div class="certificate-card">
-      <img src="images/certificate5.png" alt="Certificate 5">
-      <p>Ethiopia Space Science Society's Summer Space Training</p>
-    </div>
-  
-    <div class="certificate-card">
-      <img src="images/certficate6.png" alt="Certificate 6">
-      <p>BDAC Summer BootCamp</p>
-    </div>
-    
-    <div class="certificate-card">
-      <img src="images/certificate7.png" alt="Certificate 7">
-      <p>Co-fonder of Girls' Empowerment </p>
-    </div>
-    <div class="certificate-card">
-      <img src="images/certificate8.png" alt="Certificate 8">
-      <p>Best In class Code day </p>
-  </div>
-  </div>
-</section>
+      <!-- Contact -->
+      <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>If you’d like to collaborate or just say hello, feel free to reach out!</p>
+        <p>Email: <a href="mailto:hikma0227@gmail.com">hikma0227@gmail.com</a></p>
+      </section>
     </main>
-
   </div>
+
+  <!-- Typing Animation Script -->
   <script src="js/script.js"></script>
 </body>
 </html>
