@@ -6,15 +6,25 @@
   <title>Hikma Ibrahim Ahmed - Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 
 
 <body>
+  <nav class="navbar">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#work">Work Experience</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
   <header class="hero">
-  <h1>I'm <span class="name">Hikma Ibrahim Ahmed</span></h1>
-  <h2><span id="typed-text"></span><span class="cursor">|</span></h2>
-  <p class="tagline"> Script Hijabi | Tech Student </p>
+    <h1 style="color: aliceblue; font: large;"><span id="typed-text"></span><span class="cursor">|</span></h1>
+  <h2>I'm <span class="name">Hikma Ibrahim Ahmed</span></h2>
+  <h1 class="tagline"> Script Hijabi | Tech Student </h1>
 </header>
 
   <div class="container">
@@ -34,7 +44,7 @@
   <p><i class="fa-brands fa-github"></i> <a href="#">github.com/HikmaIbrahim</a></p>
 </section>
 
-  <section class="skills">
+  <section  class="skills">
   <h4>Skills</h4>
   <ul>
     <li><i class="fa-solid fa-code"></i> C++</li>
@@ -47,7 +57,7 @@
 
     <!-- Main Content -->
     <main class="main-content">
-      <section class="about">
+      <section class="about" id="about">
         <h2>About Me</h2>
         <p>I am a Computer Science student passionate about Cybersecurity, IoT, and Embedded Systems. I love building secure and innovative projects that solve real-world problems.</p>
       </section>
@@ -82,7 +92,7 @@
 </section>
 
 
-     <section class="work-experience">
+     <section class="work-experience" id="work-experience">
   <h2>Work Experience</h2>
   <div class="timeline">
 
@@ -125,7 +135,7 @@
   </div>
 </section>
 
-<section class="achievements">
+<section class="achievements" id="achievements">
   <h2>Key Achievements</h2>
   <div class="achievement-list">
 
@@ -155,7 +165,7 @@
 
   </div>
 </section>
-<section class="certificates">
+<section class="certificates" id="certificates">
   <h2>Certificates</h2>
   <div class="certificate-gallery">
     <div class="certificate-card">
@@ -200,5 +210,6 @@
     </main>
 
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
