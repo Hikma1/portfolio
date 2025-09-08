@@ -6,96 +6,43 @@ body {
   margin: 0;
 }
 
-/* Layout */
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
-  display: flex;
-  min-height: 100vh;
+  display: block;
 }
 
-/* Sidebar */
-.sidebar {
-  background-color: #4B5320;
-  padding: 20px;
-  width: 280px;
-  color: #fff;
-  flex-shrink: 0;
+/* Top Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #000;
+  border-bottom: 2px solid #4B5320;
+  z-index: 1000;
 }
 
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  border: 3px solid #fff;
-}
-
-/* Sidebar headings */
-.sidebar h1 {
-  font-size: 1.6em;
-  margin: 10px 0 5px;
-}
-
-.sidebar h3 {
-  font-weight: normal;
-  font-size: 1.1em;
-  margin-bottom: 15px;
-  color: #ddd;
-}
-
-.sidebar h4 {
-  margin-top: 20px;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 5px;
-}
-
-/* Sidebar Navigation */
-.side-nav ul {
+.navbar ul {
   list-style: none;
-  padding-left: 0;
-  margin-top: 20px;
+  margin: 0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
-.side-nav li {
-  margin-bottom: 12px;
-}
-
-.side-nav a {
+.navbar a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s, background 0.3s;
-  display: block;
-  padding: 6px 10px;
-  border-radius: 4px;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding: 6px 8px;
 }
 
-.side-nav a:hover {
-  color: #000;
-  background: #fff;
-}
-
-/* Sidebar icons */
-.contact i,
-.skills i {
-  margin-right: 8px;
-}
-
-/* Main Content */
-.main-content {
-  padding: 20px;
-  flex: 1;
-  background-color: #000;
-  line-height: 1.6;
-}
-
-.main-content p {
-  margin-bottom: 15px;
-}
-
-h2 {
+.navbar a:hover {
+  color: #4B5320;
   border-bottom: 2px solid #4B5320;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
 }
 
 /* Hero Banner */
@@ -105,25 +52,56 @@ h2 {
   background: linear-gradient(to right, #000, #111);
 }
 
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 15px;
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.hero .name {
-  color: #4B5320;
+.hero-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #4B5320;
+  object-fit: cover;
 }
 
-.hero h2 {
-  font-size: 2em;
-  color: #fff;
+.hero-text h1 {
+  font-size: 2.8em;
   margin-bottom: 10px;
 }
 
-.hero .tagline {
-  font-size: 1.2em;
-  margin-top: 10px;
+.hero-text .name {
+  color: #4B5320;
+}
+
+.hero-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero-text .tagline {
+  font-size: 1.1em;
   color: #ccc;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #4B5320;
 }
 
 .cursor {
@@ -134,6 +112,17 @@ h2 {
 @keyframes blink {
   0%, 50% { opacity: 1; }
   50.01%, 100% { opacity: 0; }
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #4B5320;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 /* Project Cards */
@@ -152,8 +141,6 @@ h2 {
 }
 
 .project-card a {
-  display: inline-block;
-  margin-top: 10px;
   color: #4B5320;
   text-decoration: underline;
 }
@@ -168,12 +155,12 @@ h2 {
   background-color: #4B5320;
   color: #fff;
   padding: 3px 8px;
-  margin-top: 10px;
   border-radius: 4px;
   font-size: 0.9em;
+  margin-top: 10px;
 }
 
-/* Timeline */
+/* Work Experience Timeline */
 .timeline {
   position: relative;
   margin: 20px 0;
@@ -210,14 +197,13 @@ h2 {
 .timeline-content h3 {
   margin: 0;
   color: #4B5320;
-  font-size: 1.1em;
 }
 
 .timeline-content .date {
   font-size: 0.9em;
   color: #aaa;
-  display: block;
   margin-bottom: 6px;
+  display: block;
 }
 
 .timeline-content:hover {
@@ -244,7 +230,6 @@ h2 {
 
 .achievement i {
   color: #4B5320;
-  font-size: 1.4em;
   margin-right: 12px;
 }
 
@@ -266,13 +251,12 @@ h2 {
   border: 1px solid #4B5320;
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .certificate-card img {
   width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -287,50 +271,15 @@ h2 {
   box-shadow: 0px 4px 12px rgba(75, 83, 32, 0.6);
 }
 
-/* Animations */
-section {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s forwards;
-}
-
-section:nth-child(1) { animation-delay: 0.2s; }
-section:nth-child(2) { animation-delay: 0.4s; }
-section:nth-child(3) { animation-delay: 0.6s; }
-section:nth-child(4) { animation-delay: 0.8s; }
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Responsive */
 @media (max-width: 768px) {
-  .container {
+  .hero-content {
     flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
     text-align: center;
   }
 
-  .sidebar .profile-pic {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
+  .hero-pic {
+    width: 140px;
+    height: 140px;
   }
-
-  .main-content {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  body { font-size: 14px; }
-  h1 { font-size: 1.6em; }
-  h2 { font-size: 1.2em; }
-  .project-card { padding: 10px; }
 }
