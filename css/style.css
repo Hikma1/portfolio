@@ -451,3 +451,13 @@ section:nth-child(5) { animation-delay: 1s; }
     transform: translateX(0);
   }
 }
+/* Apply animations */
+.hero-pic {
+  animation: slideFadeLeft 1s ease forwards;
+}
+
+.hero-text {
+  animation: slideFadeRight 1s ease forwards;
+  animation-delay: 0.3s; /* text appears after picture */
+  opacity: 0;
+}
