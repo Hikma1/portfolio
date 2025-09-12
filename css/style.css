@@ -45,6 +45,23 @@ html {
   border-bottom: 2px solid #4B5320;
 }
 
+/* ---------- Navbar Animation ---------- */
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar ul li {
+  opacity: 0;
+  animation: slideDownFade 0.6s forwards;
+}
+
 /* Hero Banner */
 .hero {
   text-align: center;
