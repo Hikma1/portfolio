@@ -62,6 +62,14 @@ html {
   animation: slideDownFade 0.6s forwards;
 }
 
+/* c */
+.navbar ul li:nth-child(1) { animation-delay: 0.2s; }
+.navbar ul li:nth-child(2) { animation-delay: 0.4s; }
+.navbar ul li:nth-child(3) { animation-delay: 0.6s; }
+.navbar ul li:nth-child(4) { animation-delay: 0.8s; }
+.navbar ul li:nth-child(5) { animation-delay: 1s; }
+.navbar ul li:nth-child(6) { animation-delay: 1.2s; }
+
 /* Hero Banner */
 .hero {
   text-align: center;
