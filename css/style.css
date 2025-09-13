@@ -486,3 +486,14 @@ section:nth-child(5) { animation-delay: 1s; }
   animation-delay: 0.3s; /* text appears after picture */
   opacity: 0;
 }
+/* ---------- Scroll Reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
