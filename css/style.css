@@ -500,6 +500,7 @@ section:nth-child(5) { animation-delay: 1s; }
 /* Scroll Down Arrow */
 .scroll-down {
   margin-top: 30px;
+  margin-left: -40px;
 }
 
 .scroll-down a {
