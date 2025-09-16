@@ -524,7 +524,7 @@ section:nth-child(5) { animation-delay: 1s; }
 /* Scroll Down Arrow - Fixed Bottom Left */
 .scroll-down {
   position: fixed;
-  left: 30px;
+  left: 1200px;
   bottom: 20px;
   z-index: 1500; /* stays above content */
 }
