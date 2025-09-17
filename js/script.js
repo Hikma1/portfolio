@@ -48,3 +48,14 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll(); // trigger on load
 
+
+// Show Back-to-Top when scrolling
+window.addEventListener("scroll", function() {
+  const backToTop = document.getElementById("backToTop");
+  if (window.scrollY > 300) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+});
+

@@ -546,3 +546,22 @@ section:nth-child(5) { animation-delay: 1s; }
   40% { transform: translateY(10px); }
   60% { transform: translateY(5px); }
 }
+/* Back to Top Arrow */
+.back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  z-index: 1500;
+  display: none; /* hidden by default */
+}
+
+.back-to-top a {
+  color: #4B5320;
+  font-size: 2em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.back-to-top a:hover {
+  color: #7a823f;
+}
