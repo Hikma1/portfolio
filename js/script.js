@@ -48,9 +48,6 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll(); // trigger on load
 
-
-
-});
 // Show Back-to-Top with fade effect
 window.addEventListener("scroll", function() {
   const backToTop = document.getElementById("backToTop");
