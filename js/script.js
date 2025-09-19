@@ -28,6 +28,28 @@ let letter = "";
   }
 }());
 
+/ Dark/Light Mode Toggle
+const themeToggle = document.querySelector(".toggle-theme");
+const themeIcon = document.getElementById("themeIcon");
+
+// Load saved theme
+if (localStorage.getItem("theme") === "light") {
+  document.body.classList.add("light-mode");
+  themeIcon.classList.replace("fa-moon", "fa-sun");
+}
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+
+  if (document.body.classList.contains("light-mode")) {
+    themeIcon.classList.replace("fa-moon", "fa-sun");
+    localStorage.setItem("theme", "light");
+  } else {
+    themeIcon.classList.replace("fa-sun", "fa-moon");
+    localStorage.setItem("theme", "dark");
+  }
+});
+
 // Scroll Reveal
 function revealOnScroll() {
   let reveals = document.querySelectorAll(".reveal");
