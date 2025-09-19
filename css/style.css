@@ -66,12 +66,13 @@ html {
   color: #7a823f;
 }
 
-/* Light Mode Styles */
+/* Light Mode Fixes */
 body.light-mode {
   background-color: #fff;
   color: #000;
 }
 
+/* Navbar */
 body.light-mode .navbar {
   background: #fff;
   border-bottom: 2px solid #4B5320;
@@ -81,15 +82,11 @@ body.light-mode .navbar a {
   color: #000;
 }
 
-body.light-mode .project-card,
-body.light-mode .achievement,
-body.light-mode .certificate-card,
-body.light-mode .timeline-content {
-  background: #f9f9f9;
-  border: 1px solid #4B5320;
-  color: #000;
+body.light-mode .navbar a:hover {
+  color: #4B5320;
 }
 
+/* Hero */
 body.light-mode .hero {
   background: linear-gradient(to right, #fff, #f4f4f4);
 }
@@ -100,6 +97,31 @@ body.light-mode .hero-text .name {
 
 body.light-mode .tagline {
   color: #333;
+}
+
+/* Main content */
+body.light-mode .main-content {
+  background: #fff;
+  color: #000;
+}
+
+/* Cards & Sections */
+body.light-mode .project-card,
+body.light-mode .achievement,
+body.light-mode .certificate-card,
+body.light-mode .timeline-content {
+  background: #f9f9f9;
+  border: 1px solid #4B5320;
+  color: #000;
+}
+
+body.light-mode h2 {
+  border-bottom: 2px solid #4B5320;
+  color: #000;
+}
+
+body.light-mode p {
+  color: #222;
 }
 
 /* ---------- Navbar Animation ---------- */
