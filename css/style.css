@@ -1,3 +1,8 @@
+/* Smooth theme transitions */
+* {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
 /* Global */
 body {
   background-color: #000;
