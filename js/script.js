@@ -28,7 +28,7 @@ let letter = "";
   }
 }());
 
-/ Dark/Light Mode Toggle
+// Dark/Light Mode Toggle
 const themeToggle = document.querySelector(".toggle-theme");
 const themeIcon = document.getElementById("themeIcon");
 
