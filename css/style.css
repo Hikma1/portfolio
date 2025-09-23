@@ -66,11 +66,6 @@ html {
   color: #7a823f;
 }
 
-/* Light Mode Fixes */
-body.light-mode {
-  background-color: #fff;
-  color: #000;
-}
 
 /* Navbar */
 body.light-mode .navbar {
