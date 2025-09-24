@@ -79,3 +79,20 @@ window.addEventListener("scroll", function() {
     backToTop.classList.remove("show");
   }
 });
+// Interactive Achievements Timeline
+const items = document.querySelectorAll(".timeline-item");
+const popup = document.getElementById("timelinePopup");
+const popupTitle = document.getElementById("popupTitle");
+const popupDesc = document.getElementById("popupDesc");
+
+items.forEach(item => {
+  item.addEventListener("click", () => {
+    popupTitle.innerText = item.getAttribute("data-title");
+    popupDesc.innerText = item.getAttribute("data-desc");
+    popup.style.display = "block";
+  });
+});
+
+function closePopup() {
+  popup.style.display = "none";
+}
