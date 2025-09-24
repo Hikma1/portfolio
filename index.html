@@ -125,18 +125,48 @@
           </div>
         </div>
       </section>
+<section id="achievements" class="achievements">
+  <h2>Key Achievements</h2>
 
-      <!-- Achievements -->
-      <section id="achievements" class="achievements reveal">
-        <h2>Key Achievements</h2>
-        <div class="achievement-list">
-          <div class="achievement"><i class="fa-solid fa-trophy"></i> Excellence in Mathematics – Pan-African Olympiad (2023)</div>
-          <div class="achievement"><i class="fa-solid fa-chart-line"></i> Technical Contributor – Agricultural Census, Ethiopia (2024)</div>
-          <div class="achievement"><i class="fa-solid fa-laptop-code"></i> Graduate – SheCodes Coding Workshop</div>
-          <div class="achievement"><i class="fa-solid fa-globe"></i> Ambassador – AGCCI ITU Academy (2025)</div>
-          <div class="achievement"><i class="fa-solid fa-lightbulb"></i> Contributor – INSA Summer Camp, Ethiopia (2024)</div>
-        </div>
-      </section>
+  <div class="timeline-container">
+    <div class="timeline" id="achievementTimeline">
+      
+      <!-- Achievement 1 -->
+      <div class="timeline-item" data-title="Excellence in Mathematics" data-desc="Pan-African Olympiad (2023)">
+        <i class="fa-solid fa-trophy"></i>
+      </div>
+
+      <!-- Achievement 2 -->
+      <div class="timeline-item" data-title="Agricultural Census" data-desc="Technical Contributor – Ethiopia (2024)">
+        <i class="fa-solid fa-chart-line"></i>
+      </div>
+
+      <!-- Achievement 3 -->
+      <div class="timeline-item" data-title="SheCodes Workshop" data-desc="Graduate – Coding Workshop">
+        <i class="fa-solid fa-laptop-code"></i>
+      </div>
+
+      <!-- Achievement 4 -->
+      <div class="timeline-item" data-title="AGCCI Ambassador" data-desc="ITU Academy (2025)">
+        <i class="fa-solid fa-globe"></i>
+      </div>
+
+      <!-- Achievement 5 -->
+      <div class="timeline-item" data-title="INSA Summer Camp" data-desc="Contributor – Ethiopia (2024)">
+        <i class="fa-solid fa-lightbulb"></i>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Popup details -->
+  <div class="timeline-popup" id="timelinePopup">
+    <h3 id="popupTitle"></h3>
+    <p id="popupDesc"></p>
+    <span class="close-popup" onclick="closePopup()">&times;</span>
+  </div>
+</section>
+
 
       <!-- Certificates -->
 <!-- Certificates -->
