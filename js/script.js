@@ -96,3 +96,20 @@ items.forEach(item => {
 function closePopup() {
   popup.style.display = "none";
 }
+// Auto-scroll for achievements timeline
+const timeline = document.getElementById("achievementTimeline");
+let scrollDirection = 1; // 1 = right, -1 = left
+
+function autoScrollTimeline() {
+  if (!timeline) return;
+
+  // Scroll speed (px per step)
+  timeline.scrollLeft += scrollDirection * 1;
+
+  // Bounce back when reaching edges
+  if (timeline.scrollLeft + timeline.clientWidth >= timeline.scrollWidth) {
+    scrollDirection = -1; // reverse
+  } else if (timeline.scrollLeft <= 0) {
+    scrollDirection = 1; // forward
+  }
+}
