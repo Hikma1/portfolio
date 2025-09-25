@@ -113,3 +113,11 @@ function autoScrollTimeline() {
     scrollDirection = 1; // forward
   }
 }
+// Run every 20ms for smooth effect
+let scrollInterval = setInterval(autoScrollTimeline, 20);
+
+// Pause auto-scroll when user hovers
+timeline.addEventListener("mouseenter", () => clearInterval(scrollInterval));
+timeline.addEventListener("mouseleave", () => {
+  scrollInterval = setInterval(autoScrollTimeline, 20);
+});
