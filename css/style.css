@@ -428,6 +428,9 @@ h2 {
   border-radius: 4px;
 }
 
+.timeline {
+  scroll-behavior: smooth;
+}
 
 /* Certificates */
 .certificate-gallery {
