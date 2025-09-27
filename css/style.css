@@ -460,6 +460,31 @@ h2 {
   transform: translateX(-50%) translateY(-5px);
 }
 
+.timeline-item::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  color: #4B5320;
+  font-size: 0.85em;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #4B5320;
+  box-shadow: 0px 4px 10px rgba(75, 83, 32, 0.6);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 999;
+}
+
+.timeline-item:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-8px);
+}
+
 /* Certificates */
 .certificate-gallery {
   display: grid;
