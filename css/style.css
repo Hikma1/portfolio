@@ -463,23 +463,37 @@ h2 {
 .timeline-item::after {
   content: attr(data-tooltip);
   position: absolute;
-  bottom: 55px;
+  bottom: 65px;
   left: 50%;
   transform: translateX(-50%);
-  background: #4B5320;
+  background: #111;
   color: #fff;
   font-size: 0.8em;
-  padding: 6px 14px;
-  border-radius: 50px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #4B5320;
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
   z-index: 999;
 }
 
-.timeline-item:hover::after {
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #111 transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.timeline-item:hover::after,
+.timeline-item:hover::before {
   opacity: 1;
-  transform: translateX(-50%) translateY(-6px);
 }
 
 /* Certificates */
