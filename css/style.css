@@ -544,6 +544,11 @@ h2 {
   transition: opacity 0.3s, transform 0.3s;
   z-index: 999;
 }
+.timeline-item:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-8px);
+}
+
 /* Certificates */
 .certificate-gallery {
   display: grid;
