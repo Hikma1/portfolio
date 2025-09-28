@@ -520,6 +520,10 @@ h2 {
   transform: translateX(-50%) translateY(-8px);
 }
 
+/* Timeline Tooltips - Green Glow */
+.timeline-item {
+  position: relative;
+}
 /* Certificates */
 .certificate-gallery {
   display: grid;
