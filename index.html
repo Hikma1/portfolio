@@ -9,6 +9,14 @@
 </head>
 
 <body id="top">
+  <script>
+// Parallax fallback for smoother scroll
+window.addEventListener("scroll", function() {
+  let scrollY = window.scrollY;
+  document.querySelector(".hero").style.backgroundPositionY = -(scrollY * 0.4) + "px";
+});
+</script>
+
   <!-- Dark Mode Toggle -->
    <div class="theme-toggle">
     <i id="themeIcon" class="fa-solid fa-moon"></i>
