@@ -151,6 +151,18 @@ body.light-mode p {
   background: linear-gradient(to right, #000, #111);
 }
 
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 120px 20px;
+  color: #fff;
+  background-image: url('images/hero-bg.jpg'); /* your custom image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* key for parallax */
+  border-bottom: 2px solid #4B5320;
+}
+
 .hero-content {
   display: flex;
   align-items: center;
