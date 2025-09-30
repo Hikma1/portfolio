@@ -182,6 +182,11 @@ body.light-mode p {
   opacity: 0.15;
   animation: moveGrid 10s linear infinite;
 }
+
+@keyframes moveGrid {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-50px, -50px); }
+}
 .hero-pic {
   width: 180px;
   height: 180px;
