@@ -146,12 +146,6 @@ body.light-mode p {
 
 /* Hero Banner */
 .hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(to right, #000, #111);
-}
-
-.hero {
   position: relative;
   text-align: center;
   padding: 120px 20px;
@@ -184,14 +178,6 @@ body.light-mode p {
   background: rgba(0,0,0,0.5); /* dark overlay for readability */
   z-index: 1;
 }
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
 .hero-pic {
   width: 180px;
   height: 180px;
