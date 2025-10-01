@@ -167,26 +167,25 @@ body.light-mode p {
   padding: 30px;
   border-radius: 12px;
 }
-
 .hero::before {
   content: "";
   position: absolute;
   top: 0; left: 0;
   width: 200%; height: 200%;
+
+  /* Stronger cyber grid */
   background: repeating-linear-gradient(
-    0deg, #4B5320 1px, transparent 2px
+    0deg, rgba(75, 83, 32, 0.7) 0px, rgba(75, 83, 32, 0.7) 2px, transparent 2px, transparent 40px
   ),
   repeating-linear-gradient(
-    90deg, #4B5320 1px, transparent 2px
+    90deg, rgba(75, 83, 32, 0.7) 0px, rgba(75, 83, 32, 0.7) 2px, transparent 2px, transparent 40px
   );
-  opacity: 0.15;
-  animation: moveGrid 10s linear infinite;
+
+  opacity: 0.25; /* more visible */
+  animation: moveGrid 15s linear infinite;
+  z-index: 1;
 }
 
-@keyframes moveGrid {
-  from { transform: translate(0, 0); }
-  to { transform: translate(-50px, -50px); }
-}
 .hero-pic {
   width: 180px;
   height: 180px;
