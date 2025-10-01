@@ -185,6 +185,54 @@ body.light-mode p {
   animation: moveGrid 15s linear infinite;
   z-index: 1;
 }
+.hero::before {
+  content: "💻 🔐 📡";
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 2.5rem;
+  color: rgba(75, 83, 32, 0.4);
+  animation: floatIcons 10s ease-in-out infinite alternate;
+}
+
+.hero::after {
+  content: "💡 ⚙️";
+  position: absolute;
+  bottom: 20%;
+  right: 15%;
+  font-size: 2.5rem;
+  color: rgba(75, 83, 32, 0.3);
+  animation: floatIcons 12s ease-in-out infinite alternate;
+}
+
+@keyframes floatIcons {
+  from { transform: translateY(0px) rotate(0deg); }
+  to { transform: translateY(-40px) rotate(20deg); }
+}
+.hero::before {
+  content: "💻 🔐 📡";
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 2.5rem;
+  color: rgba(75, 83, 32, 0.4);
+  animation: floatIcons 10s ease-in-out infinite alternate;
+}
+
+.hero::after {
+  content: "💡 ⚙️";
+  position: absolute;
+  bottom: 20%;
+  right: 15%;
+  font-size: 2.5rem;
+  color: rgba(75, 83, 32, 0.3);
+  animation: floatIcons 12s ease-in-out infinite alternate;
+}
+
+@keyframes floatIcons {
+  from { transform: translateY(0px) rotate(0deg); }
+  to { transform: translateY(-40px) rotate(20deg); }
+}
 
 
 .hero-pic {
