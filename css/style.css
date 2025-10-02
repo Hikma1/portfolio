@@ -11,3 +11,31 @@ body {
 }
 
 html { scroll-behavior: smooth; }
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #000;
+  border-bottom: 2px solid #4B5320;
+  z-index: 1000;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 10px 20px;
+  list-style: none;
+}
+.navbar a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 6px 8px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+.navbar a:hover {
+  color: #4B5320;
+  border-bottom: 2px solid #4B5320;
+}
+
