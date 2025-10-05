@@ -178,3 +178,12 @@ body.light-mode .timeline-content {
   60% { transform: translateY(5px); }
 }
 .scroll-down a { animation: bounce 2s infinite; }
+/* ---------- Main Content ---------- */
+.main-content { padding:20px; }
+h2 { border-bottom:2px solid #4B5320; margin-bottom:15px; padding-bottom:5px; }
+
+/* ---------- Reusable Card Styles ---------- */
+.project-card, .achievement, .certificate-card, .timeline-content {
+  background:#111; border:1px solid #4B5320; border-radius:8px;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
