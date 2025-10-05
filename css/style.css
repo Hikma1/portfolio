@@ -10,7 +10,10 @@ body {
   color: #fff;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
+
 /* ---------- Navbar ---------- */
 .navbar {
   position: sticky;
@@ -19,6 +22,7 @@ html { scroll-behavior: smooth; }
   border-bottom: 2px solid #4B5320;
   z-index: 1000;
 }
+
 .navbar ul {
   display: flex;
   justify-content: center;
@@ -27,6 +31,7 @@ html { scroll-behavior: smooth; }
   padding: 10px 20px;
   list-style: none;
 }
+
 .navbar a {
   color: #fff;
   font-weight: bold;
@@ -34,6 +39,7 @@ html { scroll-behavior: smooth; }
   padding: 6px 8px;
   transition: color 0.3s, border-bottom 0.3s;
 }
+
 .navbar a:hover {
   color: #4B5320;
   border-bottom: 2px solid #4B5320;
@@ -41,13 +47,71 @@ html { scroll-behavior: smooth; }
 
 /* Navbar animation */
 @keyframes slideDownFade {
-  from { opacity: 0; transform: translateY(-20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.navbar ul li { opacity: 0; animation: slideDownFade 0.6s forwards; }
-.navbar ul li:nth-child(1){animation-delay:0.2s;}
-.navbar ul li:nth-child(2){animation-delay:0.4s;}
-.navbar ul li:nth-child(3){animation-delay:0.6s;}
-.navbar ul li:nth-child(4){animation-delay:0.8s;}
-.navbar ul li:nth-child(5){animation-delay:1s;}
-.navbar ul li:nth-child(6){animation-delay:1.2s;}
+
+.navbar ul li {
+  opacity: 0;
+  animation: slideDownFade 0.6s forwards;
+}
+
+.navbar ul li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.navbar ul li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.navbar ul li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.navbar ul li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.navbar ul li:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.navbar ul li:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+/* ---------- Theme Toggle ---------- */
+.toggle-theme {
+  cursor: pointer;
+}
+
+.toggle-theme i {
+  font-size: 1.2em;
+  color: #4B5320;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.toggle-theme i:hover {
+  transform: rotate(20deg);
+  color: #7a823f;
+}
+/* Light mode overrides */
+body.light-mode { background: #fff; color: #000; }
+body.light-mode .navbar { background: #fff; border-color: #4B5320; }
+body.light-mode .navbar a { color: #000; }
+body.light-mode .navbar a:hover { color: #4B5320; }
+body.light-mode .hero { background: linear-gradient(to right, #fff, #f4f4f4); }
+body.light-mode .main-content { background: #fff; color: #000; }
+body.light-mode .project-card,
+body.light-mode .achievement,
+body.light-mode .certificate-card,
+body.light-mode .timeline-content {
+  background: #f9f9f9; color: #000; border-color: #4B5320;
+}
