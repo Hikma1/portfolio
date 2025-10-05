@@ -115,3 +115,20 @@ body.light-mode .certificate-card,
 body.light-mode .timeline-content {
   background: #f9f9f9; color: #000; border-color: #4B5320;
 }
+/* ---------- Hero Section ---------- */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 120px 20px;
+  color: #fff;
+  background: radial-gradient(circle, #0a0a0a, #000);
+  border-bottom: 2px solid #4B5320;
+  overflow: hidden;
+}
+.hero-content {
+  position: relative; z-index: 2;
+  display: flex; flex-wrap: wrap; gap: 40px;
+  align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.4);
+  padding: 30px; border-radius: 12px;
+}
