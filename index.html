@@ -1,300 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hikma Ibrahim Ahmed - Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hikma Ibrahim Ahmed | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
-
 <body id="top">
-  <script>
-// Parallax fallback for smoother scroll
-window.addEventListener("scroll", function() {
-  let scrollY = window.scrollY;
-  document.querySelector(".hero").style.backgroundPositionY = -(scrollY * 0.4) + "px";
-});
-</script>
 
-  <!-- Dark Mode Toggle -->
-   <div class="theme-toggle">
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
     <i id="themeIcon" class="fa-solid fa-moon"></i>
   </div>
-  <!-- Top Navbar -->
+
+  <!-- Navbar -->
   <nav class="navbar">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#work">Work Experience</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#contact">Contact</a></li>    
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Banner -->
+  <!-- Hero Section -->
   <header class="hero">
-
     <div class="hero-content">
-      <img src="images/profile.jpg" alt="Hikma Ibrahim Ahmed" class="hero-pic">
+      <img src="images/profile.jpg" alt="Hikma Ibrahim Ahmed" class="hero-pic" />
       <div class="hero-text">
         <h1><span id="typed-text"></span><span class="cursor">|</span></h1>
         <h2>I'm <span class="name">Hikma Ibrahim Ahmed</span></h2>
-        <p class="tagline">ScriptVeil | CS Student @ Addis Ababa University | Cybersecurity & IoT Enthusiast</p>
-        <div class="social-links">
-          <a href="mailto:hikma0227@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-        </div>
+        <p class="tagline">Computer Science Student | Cybersecurity & IoT Enthusiast</p>
       </div>
     </div>
   </header>
-<!-- Scroll Down Arrow -->
-<div class="scroll-down">
-  <a href="#about"><i class="fa-solid fa-angles-down"></i></a>
-</div>
 
-  <div class="container">
-    <main class="main-content">
-      <!-- About -->
-      <section id="about" class="about reveal">
-        <h2>About Me</h2>
-        <p>I am a Computer Science student passionate about Cybersecurity, IoT, and Embedded Systems. I love building secure and innovative projects that solve real-world problems.</p>
-      </section>
+  <div class="main-content">
 
-      <!-- Projects -->
-      <section id="projects" class="projects reveal">
-        <h2>Projects</h2>
+    <section id="about" class="section reveal">
+      <h2>About Me</h2>
+      <p>I’m a Computer Science student passionate about cybersecurity, IoT, and building embedded systems that solve real-world problems with innovation and impact.</p>
+    </section>
 
-        <div class="project-card">
-          <h3>Encrypted USB Storage 🔐</h3>
-          <p>A concept project to build a secure USB storage device using AES encryption. Designed to protect sensitive files with robust security and user-friendly access.</p>
-          <span class="status">Project in progress</span>
+    <section id="projects" class="section reveal">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>🔐 Secured USB Storage</h3>
+        <p>A hardware-software project to build a USB drive that uses AES encryption for safe file storage.</p>
+        <span class="status">In Progress</span>
+      </div>
+
+      <div class="project-card">
+        <h3>🌾 Smart Agriculture System</h3>
+        <p>Designed an IoT-based system for monitoring soil moisture and optimizing irrigation.</p>
+      </div>
+    </section>
+
+    <section id="work" class="section reveal">
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-tooltip="INSA Cyber Talent">
+          <i class="fa-solid fa-user-shield"></i>
         </div>
-
-        <div class="project-card">
-          <h3>Smart Health Monitoring System ❤️‍🩹</h3>
-          <p>Developed a system using sensors to measure temperature, heart rate, and oxygen levels. Results were displayed on an LCD and a mobile app via Bluetooth.</p>
-          <a href="#">GitHub Link</a>
+        <div class="timeline-item" data-tooltip="Math Camp Facilitator">
+          <i class="fa-solid fa-chalkboard-teacher"></i>
         </div>
+      </div>
+    </section>
 
-        <div class="project-card">
-          <h3>SheConnects Web App 💻</h3>
-          <p>Worked as UI/UX designer for a platform empowering women through technology. Contributed to user research, wireframing, and interface design.</p>
-          <a href="#">GitHub Link</a>
-        </div>
-
-        <div class="project-card">
-          <h3>Smart Agriculture System 🌱</h3>
-          <p>Designed a smart agriculture solution using sensors to monitor soil moisture, temperature, and humidity. Aimed at improving irrigation efficiency.</p>
-          <a href="#">GitHub Link</a>
-        </div>
-      </section>
-
-      <!-- Work Experience -->
-      <section id="work" class="work-experience reveal">
-        <h2>Work Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-icon"><i class="fa-solid fa-laptop-code"></i></div>
-            <div class="timeline-content">
-              <h3>Front-End Developer Intern – Code Alpha</h3>
-              <span class="date">April 2025</span>
-              <p>Completed a hands-on internship focused on frontend web development. Worked on real-world UI projects using HTML, CSS, and JavaScript.</p>
-            </div>
+    <section id="achievements" class="section reveal">
+      <h2>Achievements</h2>
+      <div class="timeline-container">
+        <div id="achievementTimeline" class="timeline">
+          <div class="timeline-item" data-tooltip="Pan-African Math Olympiad 🏅">
+            <i class="fa-solid fa-medal"></i>
           </div>
-
-          <div class="timeline-item">
-            <div class="timeline-icon"><i class="fa-solid fa-microchip"></i></div>
-            <div class="timeline-content">
-              <h3>Technical Member – INSA Cyber Talent Center</h3>
-              <span class="date">Aug 2024 – Present</span>
-              <p>Participated in national technical projects focused on embedded systems and cybersecurity.</p>
-            </div>
+          <div class="timeline-item" data-tooltip="Cybersecurity Summer Camp">
+            <i class="fa-solid fa-shield-halved"></i>
           </div>
-
-          <div class="timeline-item">
-            <div class="timeline-icon"><i class="fa-solid fa-book"></i></div>
-            <div class="timeline-content">
-              <h3>Facilitator – 10th Bahir Dar University Math Camp</h3>
-              <span class="date">July 2023</span>
-              <p>Guided high school participants in mathematical problem-solving sessions and supported instructors in delivering content.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-icon"><i class="fa-solid fa-users"></i></div>
-            <div class="timeline-content">
-              <h3>Co-Founder – Girls' Empowerment Club</h3>
-              <span class="date">2023 – 2024</span>
-              <p>Initiated and co-led a club focused on empowering female students through mentorship, leadership training, and skill-building workshops.</p>
-            </div>
+          <div class="timeline-item" data-tooltip="Girls' Empowerment Club Founder">
+            <i class="fa-solid fa-users"></i>
           </div>
         </div>
-      </section>
-<section id="achievements" class="achievements">
-  <h2>Key Achievements</h2>
-
-  <div class="timeline-container">
-    <div class="timeline" id="achievementTimeline">
-      
-      <!-- Achievement 1 -->
-      <div class="timeline-item" 
-      data-title="Excellence in Mathematics" 
-      data-desc="Pan-African Olympiad (2023)"
-      data-tooltip="Pan-African Mathematics Olympiad – Excellence in Mathematics (2023)">
-        <i class="fa-solid fa-trophy"></i>
       </div>
+    </section>
 
-      <!-- Achievement 2 -->
-      <div class="timeline-item"
-       data-title="Agricultural Census" 
-       data-desc="Technical Contributor – Ethiopia (2024)"
-       data-tooltip="Ethiopian Statistical Service – Agricultural Census Technical Contributor (2024)">
-        <i class="fa-solid fa-chart-line"></i>
+    <section id="certificates" class="section reveal">
+      <h2>Certificates</h2>
+      <div class="certificate-gallery">
+        <div class="certificate-card">
+          <img src="images/cert1.jpg" alt="Certificate 1" />
+          <p>Udacity: Intro to Cybersecurity</p>
+        </div>
       </div>
+    </section>
 
-      <!-- Achievement 3 -->
-      <div class="timeline-item"
-       data-title="SheCodes Workshop" 
-       data-desc="Graduate – Coding Workshop"
-        data-tooltip="SheCodes Coding Workshop Graduate"
-       >
-        <i class="fa-solid fa-laptop-code"></i>
-      </div>
+    <section id="contact" class="section reveal">
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:hikma0227@gmail.com">hikma0227@gmail.com</a></p>
+      <p>🌍 <a href="https://github.com/hikma-ahmed" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com/in/hikma-ibrahim-ahmed" target="_blank">LinkedIn</a></p>
+    </section>
 
-      <!-- Achievement 4 -->
-      <div class="timeline-item" 
-      data-title="AGCCI Ambassador" 
-      data-desc="ITU Academy (2025)" 
-        data-tooltip="AGCCI Ambassador – ITU Academy (2025)">
-        <i class="fa-solid fa-globe"></i>
-      </div>
-
-      <!-- Achievement 5 -->
-      <div class="timeline-item" 
-      data-title="INSA Summer Camp" 
-      data-desc="Contributor – Ethiopia (2024)"
-      data-tooltip="INSA Summer Camp Contributor – Ethiopia (2024)">
-        <i class="fa-solid fa-lightbulb"></i>
-      </div>
-
-    </div>
   </div>
 
-  <!-- Popup details -->
-  <div class="timeline-popup" id="timelinePopup">
-    <h3 id="popupTitle"></h3>
-    <p id="popupDesc"></p>
-    <span class="close-popup" onclick="closePopup()">&times;</span>
-  </div>
-</section>
-
-
-      <!-- Certificates -->
-<!-- Certificates -->
-<section id="certificates" class="certificates reveal">
-  <h2>Certificates</h2>
-  <div class="certificate-gallery">
-    <div class="certificate-card">
-      <img src="images/certificate1.png" alt="Pan-African Mathematics Olympiad – Excellence in Mathematics (2023)" onclick="openModal(0)">
-    </div>
-    <div class="certificate-card">
-      <img src="images/certificate2.png" alt="SheCodes Coding Workshop Graduate" onclick="openModal(1)">
-    </div>
-    <div class="certificate-card">
-      <img src="images/certificate3.png" alt="Ethiopian Statistical Service" onclick="openModal(2)">
-    </div>
-    <div class="certificate-card">
-      <img src="images/certificate4.png" alt="Bahir Dar University Math Camp" onclick="openModal(3)">
-    </div>
-    <div class="certificate-card">
-      <img src="images/certificate5.png" alt="Ethiopia Space Science Society's Summer Space Training" onclick="openModal(4)">
-    </div>
-    <div class="certificate-card">
-      <img src="images/certificate6.png" alt="BDAC Summer BootCamp" onclick="openModal(5)">
-    </div>
-    <div class="certificate-card">
-      <img src="images/certificate7.png" alt="Co-founder of Girls' Empowerment Club" onclick="openModal(6)">
-    </div>
-    <div class="certificate-card">
-      <img src="images/certificate8.png" alt="Best in Class – Code Day" onclick="openModal(7)">
-    </div>
-  </div>
-</section>
-
-<!-- Modal for Certificates -->
-<div id="certificateModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modalImg">
-  <div id="caption"></div>
-  <!-- Navigation Arrows -->
-  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-  <a class="next" onclick="changeSlide(1)">&#10095;</a>
-</div>
-
-
-
-      <!-- Contact -->
-      <section id="contact" class="contact-section reveal">
-        <h2>Contact Me</h2>
-        <p>If you’d like to collaborate or just say hello, feel free to reach out!</p>
-        <p>Email: <a href="mailto:hikma0227@gmail.com">hikma0227@gmail.com</a></p>
-      </section>
-    </main>
+  <!-- Scroll Arrows -->
+  <div class="scroll-down">
+    <a href="#about"><i class="fa-solid fa-angles-down"></i></a>
   </div>
 
-  <!-- Typing Animation Script -->
+  <div class="back-to-top" id="backToTop">
+    <a href="#top"><i class="fa-solid fa-angles-up"></i></a>
+  </div>
+
+  <!-- Typing & Scripts -->
   <script>
-    const texts = ["Hello 👋","ሰላም 👋","مرحبا 👋","Bonjour 👋","你好 👋"];
-    let count = 0, index = 0, currentText = "", letter = "";
-    (function type(){
-      if(count === texts.length) count = 0;
-      currentText = texts[count];
-      letter = currentText.slice(0, ++index);
+    const texts = ["Hello 👋", "ሰላም 👋", "مرحبا 👋", "Bonjour 👋", "你好 👋"];
+    let count = 0, index = 0, current = "", letter = "";
+
+    function type() {
+      if (count === texts.length) count = 0;
+      current = texts[count];
+      letter = current.slice(0, ++index);
       document.getElementById("typed-text").textContent = letter;
-      if(letter.length === currentText.length){
-        count++; index = 0;
+      if (letter.length === current.length) {
+        count++;
+        index = 0;
         setTimeout(type, 1500);
       } else {
         setTimeout(type, 150);
       }
-    }());
-let currentIndex = 0;
-const images = document.querySelectorAll(".certificate-card img");
+    }
+    type();
 
-function openModal(index) {
-  currentIndex = index;
-  document.getElementById("certificateModal").style.display = "block";
-  showImage();
-}
+    // Theme toggle
+    const themeToggle = document.querySelector(".theme-toggle");
+    const themeIcon = document.getElementById("themeIcon");
+    if (localStorage.getItem("theme") === "light") {
+      document.body.classList.add("light-mode");
+      themeIcon.classList.replace("fa-moon", "fa-sun");
+    }
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+      if (document.body.classList.contains("light-mode")) {
+        themeIcon.classList.replace("fa-moon", "fa-sun");
+        localStorage.setItem("theme", "light");
+      } else {
+        themeIcon.classList.replace("fa-sun", "fa-moon");
+        localStorage.setItem("theme", "dark");
+      }
+    });
 
-function closeModal() {
-  document.getElementById("certificateModal").style.display = "none";
-}
+    // Back to top fade
+    window.addEventListener("scroll", () => {
+      const btn = document.getElementById("backToTop");
+      if (window.scrollY > 300) btn.classList.add("show");
+      else btn.classList.remove("show");
+    });
 
-function changeSlide(n) {
-  currentIndex += n;
-  if (currentIndex < 0) currentIndex = images.length - 1;
-  if (currentIndex >= images.length) currentIndex = 0;
-  showImage();
-}
-
-function showImage() {
-  const modalImg = document.getElementById("modalImg");
-  const caption = document.getElementById("caption");
-  modalImg.src = images[currentIndex].src;
-  caption.innerHTML = images[currentIndex].alt;
-}
-
-
-
+    // Reveal on scroll
+    function revealOnScroll() {
+      document.querySelectorAll(".reveal").forEach(el => {
+        let top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 80) el.classList.add("active");
+      });
+    }
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
   </script>
-  <!-- Back to Top Arrow -->
-<div class="back-to-top" id="backToTop">
-  <a href="#top"><i class="fa-solid fa-angles-up"></i></a>
-</div>
-
 </body>
 </html>
