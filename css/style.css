@@ -32,3 +32,5 @@ body{
   line-height:1.5;
   transition: background-color .45s var(--ease), color .45s var(--ease);
 }
+/* central content wrapper */
+.main-content{max-width:var(--max-width);margin:0 auto;padding:28px 20px 80px;}
