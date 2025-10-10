@@ -11,3 +11,11 @@
   --max-width: 1100px;
   --ease: cubic-bezier(.2,.9,.2,1);
 }
+/* Light mode overrides (toggled via body.light-mode) */
+body.light-mode{
+  --bg: #ffffff;
+  --panel: rgba(255,255,255,0.6);
+  --muted: #333;
+  --card-bg: rgba(255,255,255,0.7);
+  --glass-border: rgba(0,0,0,0.06);
+}
