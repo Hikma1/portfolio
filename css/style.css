@@ -1,0 +1,13 @@
+/* ---------- Root / Theme vars ---------- */
+:root{
+  --bg: #000000;
+  --panel: rgba(17,17,17,0.55); /* glass panel in dark */
+  --muted: #ccc;
+  --accent: #4B5320;
+  --accent-weak: rgba(75,83,32,0.6);
+  --glass-border: rgba(255,255,255,0.06);
+  --card-bg: rgba(10,10,10,0.6);
+  --glass-blur: 8px;
+  --max-width: 1100px;
+  --ease: cubic-bezier(.2,.9,.2,1);
+}
