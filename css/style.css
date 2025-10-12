@@ -52,3 +52,10 @@ a:hover{color:var(--accent)}
   z-index:1200;padding:10px 0;
   transition:background .35s var(--ease), border-color .35s var(--ease);
 }
+.navbar ul{list-style:none;margin:0;padding:0;display:flex;gap:28px;align-items:center}
+.navbar li{opacity:0;animation:navFade .55s forwards; }
+.navbar li:nth-child(1){animation-delay:.18s} .navbar li:nth-child(2){animation-delay:.28s}
+.navbar li:nth-child(3){animation-delay:.38s} .navbar li:nth-child(4){animation-delay:.48s}
+.navbar li:nth-child(5){animation-delay:.58s} .navbar li:nth-child(6){animation-delay:.68s}
+.navbar a{color:var(--muted);font-weight:600;padding:6px 8px;border-radius:6px}
+.navbar a:hover{color:var(--accent);}
