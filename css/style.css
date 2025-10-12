@@ -59,3 +59,5 @@ a:hover{color:var(--accent)}
 .navbar li:nth-child(5){animation-delay:.58s} .navbar li:nth-child(6){animation-delay:.68s}
 .navbar a{color:var(--muted);font-weight:600;padding:6px 8px;border-radius:6px}
 .navbar a:hover{color:var(--accent);}
+/* nav fade keyframe */
+@keyframes navFade{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
