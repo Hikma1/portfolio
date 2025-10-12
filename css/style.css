@@ -61,3 +61,5 @@ a:hover{color:var(--accent)}
 .navbar a:hover{color:var(--accent);}
 /* nav fade keyframe */
 @keyframes navFade{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.theme-toggle:hover{transform:scale(1.06)}
+.theme-toggle i{color:var(--accent);font-size:18px}
