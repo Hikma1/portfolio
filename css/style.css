@@ -87,3 +87,7 @@ a:hover{color:var(--accent)}
   border:1px solid var(--glass-border);
   backdrop-filter: blur(calc(var(--glass-blur) + 2px));
 }
+
+/* hero inner layout: picture left, text right */
+.hero-content{display:flex;gap:28px;align-items:center;width:100%;padding:30px;flex-wrap:wrap}
+@media(min-width:900px){ .hero-content{padding:48px} }
