@@ -73,3 +73,5 @@ a:hover{color:var(--accent)}
   cursor:pointer;transition:transform .18s ease,background .3s var(--ease);
   box-shadow:0 6px 18px rgba(0,0,0,0.3);
 }
+.theme-toggle:hover{transform:scale(1.06)}
+.theme-toggle i{color:var(--accent);font-size:18px}
