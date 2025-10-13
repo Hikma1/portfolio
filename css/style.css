@@ -75,3 +75,15 @@ a:hover{color:var(--accent)}
 }
 .theme-toggle:hover{transform:scale(1.06)}
 .theme-toggle i{color:var(--accent);font-size:18px}
+/* ---------- Hero (frosted glass + animated gradient shimmer) ---------- */
+.hero{
+  position:relative;padding:68px 20px 56px;margin-bottom:28px;
+  display:flex;align-items:center;justify-content:center;
+  min-height:calc(60vh);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:14px;
+  margin:26px auto;max-width:var(--max-width);
+  overflow:hidden;
+  border:1px solid var(--glass-border);
+  backdrop-filter: blur(calc(var(--glass-blur) + 2px));
+}
