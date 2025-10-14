@@ -100,3 +100,4 @@ a:hover{color:var(--accent)}
   box-shadow: 0 8px 30px rgba(0,0,0,0.35);
   backdrop-filter: blur(calc(var(--glass-blur) + 2px));
 }
+@media(max-width:760px){ .hero-panel{flex-direction:column;text-align:center} }
