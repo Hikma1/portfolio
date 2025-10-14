@@ -101,3 +101,10 @@ a:hover{color:var(--accent)}
   backdrop-filter: blur(calc(var(--glass-blur) + 2px));
 }
 @media(max-width:760px){ .hero-panel{flex-direction:column;text-align:center} }
+/* profile image */
+.hero-pic{
+  width:160px;height:160px;border-radius:12px;object-fit:cover;
+  border:2px solid rgba(255,255,255,0.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  flex-shrink:0;
+}
