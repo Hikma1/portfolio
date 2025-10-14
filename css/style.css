@@ -108,3 +108,4 @@ a:hover{color:var(--accent)}
   box-shadow: 0 6px 18px rgba(0,0,0,0.5);
   flex-shrink:0;
 }
+@media(max-width:760px){ .hero-pic{width:130px;height:130px;border-radius:14px} }
