@@ -91,3 +91,12 @@ a:hover{color:var(--accent)}
 /* hero inner layout: picture left, text right */
 .hero-content{display:flex;gap:28px;align-items:center;width:100%;padding:30px;flex-wrap:wrap}
 @media(min-width:900px){ .hero-content{padding:48px} }
+/* hero glass panel for content (slightly stronger) */
+.hero-panel{
+  display:flex;gap:28px;align-items:center;width:100%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border-radius:12px;padding:18px 20px;
+  border:1px solid var(--glass-border);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  backdrop-filter: blur(calc(var(--glass-blur) + 2px));
+}
