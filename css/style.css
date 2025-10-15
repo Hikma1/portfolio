@@ -111,3 +111,5 @@ a:hover{color:var(--accent)}
 @media(max-width:760px){ .hero-pic{width:130px;height:130px;border-radius:14px} }
 /* hero text */
 .hero-text{flex:1;min-width:220px}
+.hero-text h1{margin:0;font-weight:700;font-size:26px;color:var(--muted);line-height:1.08}
+.hero-text h2{margin:8px 0 0;font-size:28px;color:var(--accent);font-weight:700}
