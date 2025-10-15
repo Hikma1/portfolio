@@ -114,3 +114,5 @@ a:hover{color:var(--accent)}
 .hero-text h1{margin:0;font-weight:700;font-size:26px;color:var(--muted);line-height:1.08}
 .hero-text h2{margin:8px 0 0;font-size:28px;color:var(--accent);font-weight:700}
 .hero-text p.tagline{margin:10px 0 0;color:var(--muted);max-width:680px}
+/* typing cursor */
+.cursor{display:inline-block;margin-left:6px;animation: blink .9s infinite}
