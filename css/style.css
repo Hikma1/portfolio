@@ -116,3 +116,4 @@ a:hover{color:var(--accent)}
 .hero-text p.tagline{margin:10px 0 0;color:var(--muted);max-width:680px}
 /* typing cursor */
 .cursor{display:inline-block;margin-left:6px;animation: blink .9s infinite}
+@keyframes blink{0%,50%{opacity:1}51%,100%{opacity:0}}
