@@ -123,3 +123,6 @@ a:hover{color:var(--accent)}
   background: linear-gradient(120deg, rgba(75,83,32,0.06), rgba(255,255,255,0.01), rgba(75,83,32,0.03));
   mix-blend-mode: overlay;opacity:0.9;
   filter: blur(22px);
+   transform:translateZ(0);
+  animation: shimmer 8s linear infinite;
+}
