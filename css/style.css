@@ -129,3 +129,5 @@ a:hover{color:var(--accent)}
 @keyframes shimmer{
   0%{transform:translateX(-6%) scale(1)}
    50%{transform:translateX(6%) scale(1.02)}
+    100%{transform:translateX(-6%) scale(1)}
+}
