@@ -126,3 +126,5 @@ a:hover{color:var(--accent)}
    transform:translateZ(0);
   animation: shimmer 8s linear infinite;
 }
+@keyframes shimmer{
+  0%{transform:translateX(-6%) scale(1)}
