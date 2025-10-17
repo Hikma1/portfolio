@@ -131,3 +131,5 @@ a:hover{color:var(--accent)}
    50%{transform:translateX(6%) scale(1.02)}
     100%{transform:translateX(-6%) scale(1)}
 }
+/* ---------- Scroll arrows ---------- */
+.scroll-down, .back-to-top{
