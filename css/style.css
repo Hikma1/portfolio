@@ -133,3 +133,5 @@ a:hover{color:var(--accent)}
 }
 /* ---------- Scroll arrows ---------- */
 .scroll-down, .back-to-top{
+  position:fixed;bottom:22px;z-index:1300;font-size:20px;
+   display:grid;place-items:center;width:44px;height:44px;border-radius:10px;
