@@ -137,3 +137,5 @@ a:hover{color:var(--accent)}
    display:grid;place-items:center;width:44px;height:44px;border-radius:10px;
    background:var(--panel);border:1px solid var(--glass-border);backdrop-filter: blur(var(--glass-blur));
 }
+.scroll-down{left:20px;animation:bounce 2s infinite}
+.back-to-top{right:20px;opacity:0;visibility:hidden;transition:opacity .35s var(--ease)}
