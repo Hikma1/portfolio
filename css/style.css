@@ -140,3 +140,4 @@ a:hover{color:var(--accent)}
 .scroll-down{left:20px;animation:bounce 2s infinite}
 .back-to-top{right:20px;opacity:0;visibility:hidden;transition:opacity .35s var(--ease)}
 .back-to-top.show{opacity:1;visibility:visible}
+.scroll-down a,.back-to-top a{color:var(--accent);font-size:18px}
