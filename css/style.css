@@ -144,3 +144,4 @@ a:hover{color:var(--accent)}
 @keyframes bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(8px)}60%{transform:translateY(4px)}}
 /* ---------- Sections & layout ---------- */
 .section{margin:48px auto;padding:0 10px;max-width:var(--max-width)}
+.section h2{margin:0 0 18px;font-size:20px;color:var(--muted);border-bottom:1px solid var(--glass-border);padding-bottom:12px}
