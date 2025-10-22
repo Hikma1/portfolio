@@ -158,3 +158,4 @@ box-shadow:0 8px 24px rgba(0,0,0,0.45);
 .card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(0,0,0,0.55);border-color:var(--accent-weak)}
 /* project card specific */
 .project-card{display:block}
+.project-card h3{margin:0 0 8px;font-size:18px;color:var(--accent)}
