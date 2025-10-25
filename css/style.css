@@ -172,3 +172,4 @@ box-shadow:0 8px 24px rgba(0,0,0,0.45);
 .timeline{display:flex;gap:28px;align-items:center;padding:18px;border-top:1px dashed var(--glass-border);scroll-behavior:smooth}
 .timeline-item{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;position:relative}
 .timeline-item i{font-size:20px;padding:12px;border-radius:999px;background:var(--card-bg);border:1px solid var(--glass-border);color:var(--accent)}
+.timeline-item:hover{transform:scale(1.12)}
