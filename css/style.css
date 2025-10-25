@@ -166,3 +166,6 @@ box-shadow:0 8px 24px rgba(0,0,0,0.45);
 /* certificate gallery */
 .certificate-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
 .certificate-card img{width:100%;height:auto;border-radius:8px;display:block}
+.certificate-card p{margin:8px 0 0;color:var(--muted);font-size:13px}
+/* ---------- Timeline (achievements / work) ---------- */
+.timeline-container{overflow-x:auto;padding:10px 0}
