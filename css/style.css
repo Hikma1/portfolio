@@ -176,4 +176,5 @@ box-shadow:0 8px 24px rgba(0,0,0,0.45);
 /* tooltip (green glow style) */
 .timeline-item::after{
   content:attr(data-tooltip);
- position:absolute;bottom:62px;left:50%;transform:translateX(-50%) translateY(6px);}
+ position:absolute;bottom:62px;left:50%;transform:translateX(-50%) translateY(6px);
+  background:var(--card-bg);color:var(--accent);}
