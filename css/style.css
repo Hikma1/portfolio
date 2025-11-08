@@ -181,5 +181,5 @@ box-shadow:0 8px 24px rgba(0,0,0,0.45);
   padding:8px 12px;border-radius:8px;border:1px solid var(--accent-weak);
    box-shadow:0 6px 18px rgba(75,83,32,0.16);white-space:nowrap;opacity:0;pointer-events:none;
   transition:opacity .22s var(--ease),transform .22s var(--ease);
-
+transition:opacity .22s var(--ease),transform .22s var(--ease);
 }
