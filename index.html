@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hikma Ibrahim Ahmed | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body id="top">
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="images/profile.jpg" alt="Hikma Ibrahim Ahmed" class="hero-pic" />
+      <div class="hero-text">
+        <h1><span id="typed-text"></span><span class="cursor">|</span></h1>
+        <h2>I'm <span class="name">Hikma Ibrahim Ahmed</span></h2>
+        <p class="tagline">Computer Science Student | Cybersecurity & IoT Enthusiast</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-content">
+
+    <section id="about" class="section reveal">
+      <h2>About Me</h2>
+      <p>I’m a Computer Science student passionate about cybersecurity, IoT, and building embedded systems that solve real-world problems with innovation and impact.</p>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>🔐 Secured USB Storage</h3>
+        <p>A hardware-software project to build a USB drive that uses AES encryption for safe file storage.</p>
+        <span class="status">In Progress</span>
+      </div>
+
+      <div class="project-card">
+        <h3>🌾 Smart Agriculture System</h3>
+        <p>Designed an IoT-based system for monitoring soil moisture and optimizing irrigation.</p>
+      </div>
+    </section>
+
+    <section id="work" class="section reveal">
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-tooltip="INSA Cyber Talent">
+          <i class="fa-solid fa-user-shield"></i>
+        </div>
+        <div class="timeline-item" data-tooltip="Math Camp Facilitator">
+          <i class="fa-solid fa-chalkboard-teacher"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section reveal">
+      <h2>Achievements</h2>
+      <div class="timeline-container">
+        <div id="achievementTimeline" class="timeline">
+          <div class="timeline-item" data-tooltip="Pan-African Math Olympiad 🏅">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <div class="timeline-item" data-tooltip="Cybersecurity Summer Camp">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="timeline-item" data-tooltip="Girls' Empowerment Club Founder">
+            <i class="fa-solid fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:hikma0227@gmail.com">hikma0227@gmail.com</a></p>
+      <p>🌍 <a href="https://github.com/hikma-ahmed" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com/in/hikma-ibrahim-ahmed" target="_blank">LinkedIn</a></p>
+    </section>
+
+  </div>
+
+  <!-- Scroll Arrows -->
+  <div class="scroll-down">
+    <a href="#about"><i class="fa-solid fa-angles-down"></i></a>
+  </div>
+
+  <div class="back-to-top" id="backToTop">
+    <a href="#top"><i class="fa-solid fa-angles-up"></i></a>
+  </div>
+
+  <!-- Typing & Scripts -->
+  <script>
+    const texts = ["Hello 👋", "ሰላም 👋", "مرحبا 👋", "Bonjour 👋", "你好 👋"];
+    let count = 0, index = 0, current = "", letter = "";
+
+    function type() {
+      if (count === texts.length) count = 0;
+      current = texts[count];
+      letter = current.slice(0, ++index);
+      document.getElementById("typed-text").textContent = letter;
+      if (letter.length === current.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 1500);
+      } else {
+        setTimeout(type, 150);
+      }
+    }
+    type();
+
+    // Theme toggle
+    const themeToggle = document.querySelector(".theme-toggle");
+    const themeIcon = document.getElementById("themeIcon");
+    if (localStorage.getItem("theme") === "light") {
+      document.body.classList.add("light-mode");
+      themeIcon.classList.replace("fa-moon", "fa-sun");
+    }
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+      if (document.body.classList.contains("light-mode")) {
+        themeIcon.classList.replace("fa-moon", "fa-sun");
+        localStorage.setItem("theme", "light");
+      } else {
+        themeIcon.classList.replace("fa-sun", "fa-moon");
+        localStorage.setItem("theme", "dark");
+      }
+    });
+
+    // Back to top fade
+    window.addEventListener("scroll", () => {
+      const btn = document.getElementById("backToTop");
+      if (window.scrollY > 300) btn.classList.add("show");
+      else btn.classList.remove("show");
+    });
+
+    // Reveal on scroll
+    function revealOnScroll() {
+      document.querySelectorAll(".reveal").forEach(el => {
+        let top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 80) el.classList.add("active");
+      });
+    }
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>
