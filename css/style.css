@@ -184,3 +184,9 @@ box-shadow:0 8px 24px rgba(0,0,0,0.45);
 transition:opacity .22s var(--ease),transform .22s var(--ease);
 }
 .timeline-item:hover::after{opacity:1;transform:translateX(-50%) translateY(0)}
+/* popup/modal (certificate viewer & timeline popup) */
+.modal{
+  position:fixed;inset:0;display:grid;place-items:center;padding:40px;z-index:1700;
+  background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.75));
+  visibility:hidden;opacity:0;transition:opacity .25s,var(--ease);
+}
