@@ -177,13 +177,10 @@ box-shadow:0 8px 24px rgba(0,0,0,0.45);
 .timeline-item::after{
   content:attr(data-tooltip);
  position:absolute;bottom:62px;left:50%;transform:translateX(-50%) translateY(6px);
-<<<<<<< HEAD
   background:var(--card-bg);color:var(--accent);
   padding:8px 12px;border-radius:8px;border:1px solid var(--accent-weak);
    box-shadow:0 6px 18px rgba(75,83,32,0.16);white-space:nowrap;opacity:0;pointer-events:none;
   transition:opacity .22s var(--ease),transform .22s var(--ease);
 transition:opacity .22s var(--ease),transform .22s var(--ease);
 }
-=======
-  background:var(--card-bg);color:var(--accent);}
->>>>>>> 0ec82b5f09e63eeff29402f3bde9942a3762a9aa
+.timeline-item:hover::after{opacity:1;transform:translateX(-50%) translateY(0)}
