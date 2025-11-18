@@ -192,4 +192,7 @@ transition:opacity .22s var(--ease),transform .22s var(--ease);
 }
 .modal.show{visibility:visible;opacity:1}
 .modal .modal-inner{
-  width:min(1100px,96%);border-radius:12px;padding:18px;background:var(--panel);}
+  width:min(1100px,96%);border-radius:12px;padding:18px;background:var(--panel);
+    backdrop-filter: blur(calc(var(--glass-blur) + 6px));border:1px solid var(--glass-border);
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+}
