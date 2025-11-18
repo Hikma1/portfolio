@@ -200,3 +200,6 @@ transition:opacity .22s var(--ease),transform .22s var(--ease);
 /* close button */
 .modal .close{position:absolute;top:22px;right:26px;color:var(--muted);font-size:22px;cursor:pointer}
 .modal .close:hover{color:var(--accent)}
+/* ---------- Reveal / scroll animations ---------- */
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.reveal{opacity:0;transform:translateY(18px)}
