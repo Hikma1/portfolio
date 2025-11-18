@@ -197,3 +197,6 @@ transition:opacity .22s var(--ease),transform .22s var(--ease);
   box-shadow:0 20px 60px rgba(0,0,0,0.6);
 }
 .modal img{max-width:100%;display:block;border-radius:8px}
+/* close button */
+.modal .close{position:absolute;top:22px;right:26px;color:var(--muted);font-size:22px;cursor:pointer}
+.modal .close:hover{color:var(--accent)}
