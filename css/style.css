@@ -203,3 +203,8 @@ transition:opacity .22s var(--ease),transform .22s var(--ease);
 /* ---------- Reveal / scroll animations ---------- */
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 .reveal{opacity:0;transform:translateY(18px)}
+.reveal.active{opacity:1;transform:none;animation:fadeUp .55s var(--ease) both}
+
+/* ---------- Tiny helpers ---------- */
+.kv{font-weight:600;color:var(--muted)}
+.small{font-size:13px;color:var(--muted)}
