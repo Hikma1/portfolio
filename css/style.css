@@ -208,3 +208,15 @@ transition:opacity .22s var(--ease),transform .22s var(--ease);
 /* ---------- Tiny helpers ---------- */
 .kv{font-weight:600;color:var(--muted)}
 .small{font-size:13px;color:var(--muted)}
+/* ---------- Responsive ---------- */
+@media(max-width:980px){
+  .hero{padding:46px 16px}
+  .hero-text h2{font-size:22px}
+  .hero-text h1{font-size:20px}
+  .main-content{padding:20px 10px}
+}
+@media(max-width:720px){
+  .hero{margin:18px 14px}
+  .hero-panel{padding:14px}
+  .timeline{gap:18px}
+}
