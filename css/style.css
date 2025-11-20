@@ -220,3 +220,7 @@ transition:opacity .22s var(--ease),transform .22s var(--ease);
   .hero-panel{padding:14px}
   .timeline{gap:18px}
 }
+/* ---------- Accessibility / reduced motion ---------- */
+@media (prefers-reduced-motion: reduce){
+  .hero-shimmer, .theme-toggle, .scroll-down, .timeline-item, .timeline-item::after, .card{animation:none;transition:none}
+}
